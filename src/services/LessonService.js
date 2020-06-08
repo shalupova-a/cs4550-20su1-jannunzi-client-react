@@ -1,9 +1,9 @@
 export const findLessonsForModule = (moduleId) =>
-  fetch(`https://wbdv-generic-server.herokuapp.com/api/jannunzi/modules/${moduleId}/lessons`)
+  fetch(`https://wbdv-generic-server.herokuapp.com/api/ashalupova/modules/${moduleId}/lessons`)
     .then(response => response.json())
 
 export const createLesson = (moduleId, newLesson) =>
-  fetch(`https://wbdv-generic-server.herokuapp.com/api/jannunzi/modules/${moduleId}/lessons`, {
+  fetch(`https://wbdv-generic-server.herokuapp.com/api/ashalupova/modules/${moduleId}/lessons`, {
     method: 'POST',
     body: JSON.stringify(newLesson),
     headers: {

@@ -1,5 +1,5 @@
 const createCourse = (course) =>
-  fetch("https://wbdv-generic-server.herokuapp.com/api/jannunzi/courses", {
+  fetch("https://wbdv-generic-server.herokuapp.com/api/ashalupova/courses", {
     method: 'POST',
     body: JSON.stringify(course),
     headers: {
@@ -9,7 +9,7 @@ const createCourse = (course) =>
     .then(response => response.json())
 
 const updateCourse = (courseId, course) =>
-  fetch("https://wbdv-generic-server.herokuapp.com/api/jannunzi/courses/" + courseId, {
+  fetch("https://wbdv-generic-server.herokuapp.com/api/ashalupova/courses/" + courseId, {
     method: 'PUT',
     body: JSON.stringify(course),
     headers: {
@@ -19,14 +19,14 @@ const updateCourse = (courseId, course) =>
     .then(response => response.json())
 
 const deleteCourse = (courseId) =>
-  fetch("https://wbdv-generic-server.herokuapp.com/api/jannunzi/courses/" + courseId, {
+  fetch("https://wbdv-generic-server.herokuapp.com/api/ashalupova/courses/" + courseId, {
     method: 'DELETE'
   })
     .then(response => response.json())
 
 const findCourseById = (courseId) => {}
 const findAllCourses = () =>
-  fetch("https://wbdv-generic-server.herokuapp.com/api/jannunzi/courses")
+  fetch("https://wbdv-generic-server.herokuapp.com/api/ashalupova/courses")
     .then(response => response.json())
 
 export default {
